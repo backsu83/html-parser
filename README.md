@@ -3,6 +3,7 @@
 
 ## 개발 환경
 * Spring boot 2.1.0
+* java 8
 * jsoup 1.11.3
 * lombok 1.2.3
 * thymeleaf 5.3.0
@@ -11,9 +12,9 @@
 ## 빌드
 * git clone https://github.com/backsu83/html-parser.git
 * cd html-parser
-* ./gradlew build bootRun
+* ./gradlew clean build
+* Code Coverage 는 build/jacocoHtml/index.html 확인
 
-## 테스트
-* http://localhost:5000/
-* http://localhost:63342/html-parser/build/jacocoHtml/index.html (jacoco)
-
+## 실행
+* ./gradlew clean bootRun
+* http://localhost:5000 
