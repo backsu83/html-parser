@@ -9,8 +9,9 @@
 * jacoco 0.8.2
 
 ## 빌드
-* https://github.com/backsu83/html-parser.git 
-* ./gradlew build bootRun
+git clone https://github.com/backsu83/html-parser.git
+cd html-parser
+./gradlew build bootRun
 
 ## 테스트
 * http://localhost:5000/
