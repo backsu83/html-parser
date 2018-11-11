@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
+<body>
+<form action="#" th:action="@{/}" th:object="${TextProcessingInput}" method="post">
+    <table>
+        <tr>
+            <td>URL : </td>
+            <td><input type="text" size="50" th:field="*{url}" placeholder="ex) www.daum.net"/></td>
+        </tr>
+        <tr>
+            <td>TYPE : </td>
+            <td>
+                <select th:field="*{type}">
+                    <option value="HTML" selected>HTML</option>
+                    <option value="TEXT">TEXT</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>출력구분단위 : </td>
+            <td><input type="number" th:field="*{unit}" placeholder="ex) 1~100사이 숫자 입력"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button>출력</button></td>
+        </tr>
+    </table>
+</form>
+<br/>
+<table>
+    <tr>
+        <td>몫 : </td>
+        <td><textarea th:field="${TextProcessingOutput.parse}" cols="90" rows="30"></textarea></td>
+    </tr>
+    <tr>
+        <td>나머지 : </td><td><textarea th:field="*{TextProcessingOutput.remainder}" cols="90" rows="15"></textarea></td>
+    </tr>
+</table>
+</body>
+</html>
