@@ -24,6 +24,6 @@ public class TextProcessingInput {
 
     @NotNull
     @Min(value = 1)
-    private int unit;
+    private int unit = 1;
 
 }
