@@ -20,9 +20,9 @@ public class TextProcessingService {
     }
 
     /**
-     * 파싱된 html 을 byte변환후 영문 / 숫자 분류
-     * 오름차순 정렬하되 영문은 알파벳 대->소문자로 정렬
-     * 정렬된 데이터를 영어 -> 숫자 순서로 반복 저장
+     * 파싱된 html 을 byte변환후 영문 숫자 분류
+     * 오름차순 정렬하되 영문은 알파벳 대-소문자로 정렬
+     * 정렬된 데이터를 영어-숫자 순서로 반복 저장
      * 입력 받수 숫자(unit)로 결과 문자열을 나누고 나머지가 있다면 별도표기
      * @param input
      * @return TextProcessingOutput

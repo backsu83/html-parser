@@ -44,4 +44,8 @@ jacocoTestReport {
 	}
 }
 
+javadoc {
+	options.encoding('UTF-8')
+}
+
 check.dependsOn jacocoTestReport
