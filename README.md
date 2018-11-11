@@ -15,5 +15,5 @@
 
 ## 테스트
 * http://localhost:5000/
-* http://localhost:63342/html-parser/build/jacocoHtml/index.html (jacoco)
-
+* 테스트 커버리지 확인 : jacoco 파일경로 
+* project -> Bulid -> jacocoHtml -> index.html
